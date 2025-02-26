@@ -1,0 +1,3 @@
+1737378858623	Rename local variable 'opciones'
+1737378970499	Rename local variable 'posibilidades'
+1737379256758	Extract method 'mostrarMenuOpciones'
