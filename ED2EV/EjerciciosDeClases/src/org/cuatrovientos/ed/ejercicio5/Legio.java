@@ -1,6 +1,10 @@
 package org.cuatrovientos.ed.ejercicio5;
 
+import java.util.List;
+
 public class Legio {
-	protected String name;
 	
+	private String name;
+	private List<Unit> units;
+
 }
