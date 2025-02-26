@@ -1,0 +1,30 @@
+package org.cuatrovientos.ed.ejercicio6;
+
+public class CuentaAhorro extends CuentaBancaria {
+
+
+    private float interes = 2; 
+
+    /**
+     * Aplica el interés al saldo actual
+     */
+    public void aplicarInteres() {
+    	 // TODO falta implementar comandos para que funcione
+    
+    }
+
+    /**
+     * Sobrescribe mostrarInformacion para incluir también el interés
+     */
+    @Override
+    public void mostrarInformacion() {
+    	 // TODO falta implementar comandos para que funcione
+    }
+
+    public static float getInteres() {
+        return interes;
+    }
+    public static void setInteres(float nuevoInteres) {
+        interes = nuevoInteres;
+    }
+}

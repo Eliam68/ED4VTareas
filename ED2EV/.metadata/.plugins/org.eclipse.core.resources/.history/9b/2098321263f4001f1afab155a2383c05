@@ -1,0 +1,28 @@
+package org.cuatrovientos.ed.ejercicio6;
+
+public class CuentaBancaria {
+
+    protected String numero;
+    protected String titular;
+    protected float saldo;
+
+    public CuentaBancaria(String numero, String titular, float saldo) {
+        this.numero = numero;
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+
+    public void depositar(float cantidad) {
+    	// TODO falta implementar lógica adicional para que funcione
+    }
+
+    public boolean retirar(float cantidad) {
+    	// TODO falta implementar lógica adicional para que funcione
+        return false;
+    }
+
+    public String mostrarInformacion() {
+    	// TODO falta implementar lógica adicional para que funcione
+    	return "";
+    }
+}

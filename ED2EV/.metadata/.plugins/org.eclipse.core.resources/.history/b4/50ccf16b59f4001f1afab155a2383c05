@@ -1,0 +1,53 @@
+package org.cuatrovientos.ed.ejercicio2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Invoice {
+
+    private String customer;
+    private List<Product> products;
+
+    /**
+     * Constructor que recibe un String con el nombre del cliente
+     * @param customer nombre del cliente
+     */
+    public Invoice(String customer) {
+        this.customer = customer;
+        this.products = new ArrayList<>();
+    }
+
+    /**
+     * Añade un producto a la factura
+     * @param product objeto Product
+     */
+    public void add(Product product) {
+        // TODO falta implementar comandos para que funcione.
+        products.add(product);
+    }
+
+    /**
+     * Elimina un producto de la factura según el índice
+     * @param index posición del producto en la lista
+     */
+    public void remove(int index) {
+    	  // TODO falta implementar for y límites para que funcione.
+    }
+
+    /**
+     * Devuelve el total de la factura 
+     * @return total de la factura
+     */
+    public float total() {
+    	  // TODO falta implementar comandos para que funcione.
+        return sum;
+    }
+
+    // Getters y Setters (opcionales) ------------------
+    public String getCustomer() {
+        return customer;
+    }
+    public void setCustomer(String customer) {
+        this.customer = customer;
+    }
+}

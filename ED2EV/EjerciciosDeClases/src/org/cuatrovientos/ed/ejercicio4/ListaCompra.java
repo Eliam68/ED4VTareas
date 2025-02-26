@@ -1,0 +1,55 @@
+package org.cuatrovientos.ed.ejercicio4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListaCompra {
+
+    private List<ProductoCompra> productos;
+
+    /**
+     * Constructor que inicializa la lista
+     */
+    public ListaCompra() {
+        // TODO falta implementar comandos para que funcione.
+        this.productos = new ArrayList<>();
+    }
+
+    /**
+     * Agrega un producto a la lista
+     * @param p producto a agregar
+     */
+    public void agregarProducto(ProductoCompra p) {
+        // TODO falta implementar validaciones si se desea
+        productos.add(p);
+    }
+
+    /**
+     * Elimina un producto de la lista según su índice
+     * @param indice posición del producto en la lista
+     */
+    public void eliminarProducto(int indice) {
+    	 // TODO falta implementar comandos para que funcione
+    }
+
+    /**
+     *  Marcarlo como comprado según su índice
+     * @param indice posición del producto en la lista
+     */
+    public void tacharProducto(int indice) {
+    	 // TODO falta implementar comandos para que funcione
+    }
+
+    /**
+     * Devuelve un toString con la información de toda la lista
+     * @return String con los datos de la lista de compra
+     */
+    public String verLista() {
+        // TODO falta implementar comandos para que funcione.
+        return "";
+    }
+
+    public List<ProductoCompra> getProductos() {
+        return productos;
+    }
+}
