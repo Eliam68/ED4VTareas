@@ -1,5 +1,6 @@
 package org.cuatrovientos.dam.ed.EjerciciosJUnit.Entrega.Ejercicio2;
 
+import java.lang.reflect.UndeclaredThrowableException;
 import java.util.Random;
 
 public class GeneradorIp {
@@ -10,16 +11,21 @@ public class GeneradorIp {
 	private int parte4;
 
 	private void generarNumero(int min, int max) {
-		parte1 = rnd.nextInt(min, max+1);
-		parte2 = rnd.nextInt(min, max+1);
-		parte3 = rnd.nextInt(min, max+1);
-		parte4 = rnd.nextInt(min, max+1);
+		if (min >= max) {
+			throw new IllegalArgumentException("No puede ser el minimo mayor o igual al máximo");
+		}
+		parte1 = rnd.nextInt(min, max + 1);
+		parte2 = rnd.nextInt(min, max + 1);
+		parte3 = rnd.nextInt(min, max + 1);
+		parte4 = rnd.nextInt(min, max + 1);
 	}
 
 	public String generarIPV4() {
 		String resultado = "";
-		generarNumero();
 
+		// Aquí entiendo que lo de cambiar el máximo y el mínimo es desde aquí ¿O es el propio usuario?
+		generarNumero(0, 254);
+//Aquí pense en si te referias a 0 como o 0 a cualquiero 0 como 10,20 etc entiendo que es solo 0.
 		if (parte1 == 0) {
 			parte1 += 1;
 		}
@@ -29,6 +35,6 @@ public class GeneradorIp {
 
 		resultado = parte1 + "." + parte2 + "." + parte3 + "." + parte4;
 		return resultado;
-		
+
 	}
 }
