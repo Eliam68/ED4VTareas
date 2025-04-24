@@ -20,33 +20,9 @@ public class Módulos{
 		this.notasExamenes = notasExamenes;
 	}
 
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public int getTotalEntregablesEsperados() {
-		return totalEntregablesEsperados;
-	}
-
-	public int getTotalExamenesEsperados() {
-		return totalExamenesEsperados;
-	}
-
-	public List<Float> getNotasEntregables() {
-		return notasEntregables;
-	}
-
-	public List<Float> getNotasExamenes() {
-		return notasExamenes;
-	}
-
 	public float NotaModulo() {
 		float notaFinal = 0;
-		int contador1 = 1;
+		int contador1 = -1;
 		int contador2 = 0;
 		boolean minimo4Examenes = false;
 		float notaTotalExamenes = 0;
@@ -62,8 +38,8 @@ public class Módulos{
 			}
 			notaTotalExamenes += float2;
 		}
-		if (totalEntregablesEsperados < contador1) {
-			return notaFinal;
+		if (notasEntregables.size() < totalEntregablesEsperados - 1) {
+		    return 0;
 		}
 		if (totalExamenesEsperados < contador2) {
 			return notaFinal;
