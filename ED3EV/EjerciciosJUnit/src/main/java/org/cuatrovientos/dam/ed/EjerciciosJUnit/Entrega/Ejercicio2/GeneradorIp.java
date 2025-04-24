@@ -10,6 +10,8 @@ public class GeneradorIp {
 	private int parte3;
 	private int parte4;
 
+	
+
 	private void generarNumero(int min, int max) {
 		if (min >= max) {
 			throw new IllegalArgumentException("No puede ser el minimo mayor o igual al máximo");
@@ -24,7 +26,7 @@ public class GeneradorIp {
 		String resultado = "";
 
 		// Aquí entiendo que lo de cambiar el máximo y el mínimo es desde aquí ¿O es el
-		// propio usuario?
+		// propio usuario? Entiendo que no habra que hacer un constructor. O sí aunque no esté indicado.
 		generarNumero(0, 254);
 //Aquí pense en si te referias a 0 como o 0 a cualquiero 0 como 10,20 etc entiendo que es solo 0.
 		if (parte1 == 0) {
