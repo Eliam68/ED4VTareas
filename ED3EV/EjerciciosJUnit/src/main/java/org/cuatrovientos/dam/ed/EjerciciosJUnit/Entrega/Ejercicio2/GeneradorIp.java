@@ -9,14 +9,14 @@ public class GeneradorIp {
 	private int parte3;
 	private int parte4;
 
-	private void generarNumero() {
-		parte1 = rnd.nextInt(255);
-		parte2 = rnd.nextInt(255);
-		parte3 = rnd.nextInt(255);
-		parte4 = rnd.nextInt(255);
+	private void generarNumero(int min, int max) {
+		parte1 = rnd.nextInt(min, max+1);
+		parte2 = rnd.nextInt(min, max+1);
+		parte3 = rnd.nextInt(min, max+1);
+		parte4 = rnd.nextInt(min, max+1);
 	}
 
-	private String generarIPV4() {
+	public String generarIPV4() {
 		String resultado = "";
 		generarNumero();
 
