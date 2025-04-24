@@ -41,8 +41,8 @@ public class Módulos{
 		if (notasEntregables.size() < totalEntregablesEsperados - 1) {
 		    return 0;
 		}
-		if (totalExamenesEsperados < contador2) {
-			return notaFinal;
+		if (notasExamenes.size() != totalExamenesEsperados) {
+		    return 0; 
 		}
 		notaTotalEntregables /= totalEntregablesEsperados;
 		notaTotalExamenes /= totalExamenesEsperados;

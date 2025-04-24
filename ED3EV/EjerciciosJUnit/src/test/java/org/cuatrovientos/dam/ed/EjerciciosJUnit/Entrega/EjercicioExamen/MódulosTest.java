@@ -11,8 +11,6 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Tests para la clase Módulos, enfocados en el método NotaModulo.
- * NOTA: Estos tests reflejan el comportamiento ACTUAL del código (v2),
- * incluyendo los bugs restantes (cálculo de medias, exámenes exactos, regla examen < 4).
  */
 class MódulosTest {
 
@@ -77,7 +75,7 @@ class MódulosTest {
      */
     @Test
     void testExamenMenorQue4NotaMayorIgual4() {
-        Módulos M = new Módulos("Mates", 3, 2, List.of(6f, 6f, 6f), List.of(3f, 9f));
+        Módulos M = new Módulos("Mates", 3, 2, List.of(9f, 9f, 9f), List.of(3f, 9f));
         float factor = 100.0f;
         float actual = Math.round(M.NotaModulo() * factor) / factor;
         assertEquals(4f, actual, "No está limitando a 4");
